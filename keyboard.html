@@ -1,0 +1,36 @@
+<html>
+<head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+      
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+        
+        
+</head>
+<body background="istockphoto-1284691550-612x612.jpg">
+<center>
+    <h1>Object Detection</h1>
+    <button onclick="back()">Back</button>
+</center>
+<script>
+    image_1=""
+    function back(){
+window.location="index.html"}
+function preload(){
+image_1=loadImage("keyboard.jpg")
+}
+function setup(){
+canvas_1=createCanvas(500,400)
+canvas_1.center()
+}
+function draw(){
+image(image_1,0,0,500,400)
+}
+ 
+</script>
+</body>
+</html>
